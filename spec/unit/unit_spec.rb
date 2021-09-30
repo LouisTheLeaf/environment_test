@@ -3,10 +3,10 @@ require 'rails_helper'
 
 RSpec.describe Book, type: :model do
   subject do
-    described_class.new(title: 'harry potter')
-    described_class.new(author: 'john smith')
-    described_class.new(price: 10)
-    described_class.new(published_date: '1999-12-13')#Date.new(2021,9,27)) ##maybe???
+    described_class.new(title: 'harry potter',author: 'john smith',price: 10,published_date: '1999-12-13')
+    #described_class.new(author: 'john smith')
+    #described_class.new(price: 10)
+    #described_class.new(published_date: '1999-12-13')#Date.new(2021,9,27)) ##maybe???
   end
 
   # Sunny Day
