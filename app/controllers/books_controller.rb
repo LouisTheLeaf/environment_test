@@ -8,6 +8,7 @@ class BooksController < ApplicationController
 
   # GET /books/1 or /books/1.json
   def show
+    @book=Book.find(params[:id]) #after Heroku didn't work
   end
 
   # GET /books/new
@@ -17,6 +18,7 @@ class BooksController < ApplicationController
 
   # GET /books/1/edit
   def edit
+    @book=Book.find(params[:id]) #after Heroku didn't work
   end
 
   # POST /books or /books.json
